@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration</h2>
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="get" target="_blank">
+            <label for="user-name">Name</label>
+            <input type="text" name="user-name" id="user-name" value="" required>
+            <label for="user-email">Email</label>
+            <input type="email" name="user-email" id="user-email" value="" required>
+            <label for="user-password">Password</label>
+            <input type="password" name="user-password" id="user-password" value="" required>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" name="confirm-password" id="confirm-password" value="" required>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="gender" value="male" checked>male
+            <input type="radio" name="gender" id="gender" value="female">female
+            <label for="user-age">Age</label>
+            <input type="number" name="user-age" id="user-age" value="user-age" max="99" min="1" required>
+            <label for="course">Course</label>
+            <select name="Course" id="course" required>
+                <option value="Choose_a_course" selected disabled>-=Choose a course=-</option>
+                <option value="UI/UX_design">UI/UX Design</option>
+                <option value="Front-End_developer">Front-End Developer</option>
+                <option value="QA_Manual">QA Manual</option>
+            </select>
+            <label for="address">Full address</label>
+            <textarea name="user_address" id="address" cols="40" rows="3" placeholder="Country, region, city/village, street" required></textarea>
+            <label for="checkbox">I agree to the processing of personal data</label>
+            <input type="checkbox" name="aggrement" id="checkbox" value="aggrement" required>
+            <button type="reset">
+                Reset form
+            </button>
+            <button type="submit">Register</button>
+        </form>
+    </div> 
+</body>
+</html>
