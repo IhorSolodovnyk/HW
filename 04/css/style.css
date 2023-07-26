@@ -1,0 +1,74 @@
+.page_wrapper {
+    font-family: 'Open Sans';
+    font-size: 18px;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 970px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.site_heading{
+    font-weight: 700;
+    font-size: 34px;
+    text-transform: capitalize;
+}
+
+.nav_item{
+    display: inline-block;
+}
+.nav_list {
+    font-size: 0;
+    text-align: center;
+}
+
+.nav_link.active{
+    color: #000;
+}
+
+.nav_link {
+    text-transform: capitalize;
+    color: #828282;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 25px 20px;
+    display: inline-block;
+}
+
+.main_nav {
+    border-bottom: 1px solid #828282;
+}
+
+.main_screen {
+    margin-top: 12px;
+}
+
+.site_name {
+    font-size: 48;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.about_me {
+    background-color: #f6f6f6;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about_description{
+    width: 100%;
+    min-width: 480px;
+    margin: 0 auto;
+}
+
+.about_description p{
+    margin-bottom: 30px;
+}
