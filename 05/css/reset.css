@@ -1,11 +1,13 @@
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body, html {
+body{
     width: 100%;
     height: 100%;
+    max-width: 793px;
 }
 
 a {

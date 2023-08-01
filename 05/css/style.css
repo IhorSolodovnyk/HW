@@ -1,20 +1,8 @@
-body {
-    width: 793px;
-    background-color: #3B3F45;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.container {
-    width: 100%;
-    max-width: 793px;
-    margin-bottom: 20px;
-}
-
-.header_list {
+.header_content {
     text-align: center;
-    text-transform: capitalize;
     background-color: #4A4F56;
     border: 0;
+    width: 100%;
 }
 
 .header_item {
@@ -30,16 +18,30 @@ body {
     padding-bottom: 12px;
 }
 
-.list_row {
-    background-color: #88839E;
-    width: 100%;
+main{
+    background-color: #3B3F45;
+    padding: 20px 0 45px;
+}
+.main_screen {
+    margin: 0 auto 45px;
     max-width: 534px;
-    margin: 0 auto;
+    width: 100%;
+}
+
+.list_item{
+    background-color: #88839E;
+    position: relative;
+    border-top: 3px solid transparent;
+}
+
+.list_item:nth-child(2n) {
+    background-color: #7A7593;
 }
 
 .list_row span{
     display: inline-block;
     vertical-align: middle;
+    font-size: 18px;
 }
 
 .list_row span:last-of-type {
@@ -50,14 +52,14 @@ input[type='checkbox'] {
     display: none;
 }
 
-label {
+ label {
     width: 100%;
     display: inline-block;
     padding: 10px;
     cursor: pointer;
 }
 
-label::before {
+.content_text::before {
     content: '';
     display: inline-block;
     width: 10px;
@@ -66,7 +68,7 @@ label::before {
     margin-right: 10px;
 }
 
-.product_content::after {
+.content_text::after {
     content: '';
     display: block;
     width: 0;
@@ -74,24 +76,73 @@ label::before {
     background-color: #fff;
     position: absolute;
     top: 50%;
-    left: -5px;
+    left: 10px;
     opacity: 0;
-    transition: all 1s ease;
+    transition: all 0.2s ease;
 }
 
-input[type='checkbox']:checked + label .product_content::before {
+input[type='checkbox']:checked + label .content_text::before {
     background-image: url('https://www.symbols.com/images/symbol/2320_check-mark.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 8px;
 }
 
-input[type='checkbox']:checked + label .product_content::after {
-    width: 105%;
-    opacity: 0.5;
+input[type='checkbox']:checked + label .content_text::after {
+    width: 100%;
+    opacity: 1;
+    background-color: #3B3F45;
 } 
 
-.product_content {
+.content_text {
     display: inline-block;
     position: relative;
+    color: #fff;
+} 
+
+.fake_checkbox {
+    display: inline-block;
+    width: 100%;                                                                       
+    max-width: 535px;
+    padding: 11px 0 13px;
 }
+
+.fake_checkbox:hover {
+    background-color: #625E77;
+    border-top:3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+
+.fake_checkbox:active {
+    background-color: #FF8984;
+}
+
+.sub_text::before {
+    content: '('
+}
+
+.sub_text:after {
+    content: ')'
+}
+
+button {
+    display: block;
+    width: 100%;
+    max-width: 534px;
+    height: 45px;
+    cursor: pointer;
+    background-color: #4A4F56;
+    margin: 0 auto;
+    border: 1px;
+}
+
+.button_content {
+    text-align: center;
+    font-size: 18px;
+    color: #FF8984;
+}
+
+.button_content::after {
+    content: ')'
+}
+
