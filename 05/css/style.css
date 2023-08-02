@@ -59,6 +59,10 @@ input[type='checkbox'] {
     cursor: pointer;
 }
 
+.content_text {
+    padding-left: 10px;
+}
+
 .content_text::before {
     content: '';
     display: inline-block;
@@ -76,7 +80,7 @@ input[type='checkbox'] {
     background-color: #fff;
     position: absolute;
     top: 50%;
-    left: 10px;
+    left: 30px;
     opacity: 0;
     transition: all 0.2s ease;
 }
@@ -123,6 +127,10 @@ input[type='checkbox']:checked + label .content_text::after {
 
 .sub_text:after {
     content: ')'
+}
+
+input[type='checkbox']:checked ~ label .content_text {
+    color: #9B96AC;
 }
 
 button {
