@@ -109,7 +109,24 @@
     font-size: 18px;
     color: #544837;
     text-align: left;
+    margin-bottom: 20px;
  }
+
+.first_screen_button {
+    width: 180px;
+    height: 50px;
+    color: #fff;
+    background-color: orange;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.first_screen_button:hover {
+    border: #fff;
+    transform: scale(1.1);
+    font-weight: 400;
+}
 
 .first_screen_image {
     max-width: 644px;
@@ -117,3 +134,80 @@
     padding-left: 56px;
 }
 
+.features_screen{
+    max-width: 1440px;
+    width: 100%;
+    padding: 70px 120px;
+    background-image: url(../img/bg.svg); 
+    background-repeat: no-repeat;   
+    background-position: center;
+    background-position: bottom;
+}
+
+.features_headtext {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+    max-width: 539px;
+    width: 100%;
+    color: #2F281E;
+    font-size: 36px;
+}
+
+.features_content {
+    padding-top: 50px;
+}
+
+.features_list {
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features_item {
+    display: inline-block;
+    text-align: left;
+    width: 270px;
+}
+
+.features_item img{
+    width: 50px;
+    padding-bottom: 30px;
+}
+
+.features_item:last-child {
+    margin-right: 0;
+}
+
+.list_headertext {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.list_sub {
+    font-size: 16px;
+    padding-top: 16px;
+}
+
+.button_signup {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.feature_button {
+    width: 180px;
+    height: 50px;
+    color: #fff;
+    background-color: orange;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.feature_button:hover {
+    border: #fff;
+    transform: scale(1.1);
+    font-weight: 400;
+}
