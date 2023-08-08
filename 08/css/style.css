@@ -45,12 +45,34 @@ img {
     border-radius: 20px;
 }
 
-.img-50 {
+.city_grid.w {
     grid-column: span 2;
 }
 .grid_1 div {
     display: block;
     position: relative;
+}
+
+.city_grid .sub_text_1{
+    display: block;
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: #fff;
+    bottom: 20px;
+    left: 20px;
+    text-transform: capitalize;
+}
+
+.city_grid .sub_text_2{
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: #E0E0E0;
+    bottom: 20px;
+    right: 20px;
+    text-transform: capitalize;
+    opacity: 0.7;
 }
 
 .grid_1 div::before {
@@ -69,6 +91,7 @@ img {
     opacity: 0;
     transition: all 1s ease;
 } 
+
 
 .head_text2 {
     margin: 0 auto;
@@ -119,14 +142,39 @@ img {
     border-radius: 20px;
 }
 
-.img-65 {
+.nature_grid.w {
+    grid-column: span 2;
+}
+
+.nature_grid.box {
     grid-column: span 2;
     grid-row: span 2;
 }
 
-.img-50V {
-    grid-column: 3/4;
+.nature_grid.h {
     grid-row: span 2;
+}
+
+.nature_grid .sub_text_1{
+    display: block;
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: #fff;
+    bottom: 20px;
+    left: 20px;
+    text-transform: capitalize;
+}
+
+.nature_grid .sub_text_2{
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: #E0E0E0;
+    bottom: 20px;
+    right: 20px;
+    text-transform: capitalize;
+    opacity: 0.7;
 }
 
 .people_grid_img div{
@@ -199,4 +247,41 @@ img {
     right: 20px;
     text-transform: capitalize;
     opacity: 0.7;
+}
+
+.icon_heart {
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    top: 20px;
+    left: 20px;
+    padding: 20px 20px;
+    border-radius: 8px;
+    background-color: #4F4F4F;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.icon_heart:hover {
+    background-color: #fff;
+    opacity: 1;
+}
+
+
+.icon_download {
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    top: 20px;
+    right: 20px;
+    padding: 20px 20px;
+    background-color: #4F4F4F;
+    opacity: 0.5;
+    border-radius: 8px;
+    cursor: pointer;;
+}
+
+.icon_download:hover {
+    background-color: #fff;
+    opacity: 1;
 }
