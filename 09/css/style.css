@@ -4,11 +4,6 @@
 }
 
 @font-face {
-    font-family: 'FrancoisOne';
-    src: url(../fonts/FrancoisOne-Regular.ttf);
-}
-
-@font-face {
     font-family: 'PTSans';
     src: url(../fonts/PTSans-Regular.ttf);
     src: url(../fonts/PTSans-Italic.ttf);
@@ -27,53 +22,109 @@
 body {
     max-width: 1440px;
     width: 100%;
+    font-family: 'Francois One';
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    align-items: flex-start;
+    padding: 70px 120px;
 }
 
 .container {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 13px;
-    position: relative;
+    padding: 13px 120px;
 }
 
-.lang_text {
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.lang_site {
     font-family: 'Tourney';
     font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
     line-height: 18px;
+    letter-spacing: 1.32px;
     text-transform: uppercase;
-    position: absolute;
-    left: 0;
-    top: 16px;
-    bottom: 16px;
 }
 
-nav {
-    text-transform: uppercase;
-    font-size: 22px;
+.main_nav {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_list {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.nav_item {
+    color: #000;
     font-family: 'Staatliches';
-    left: 100px;
-    position: absolute;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.66px;
 }
 
-nav a:not(:last-child)::after {
-    content: "/";
-    margin: 0 10px;
+.slash {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Straatliches';
 }
 
-.container img {
-    height: 54px;
-    max-width: 238px;
-    width: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
+.main_logo_svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.introduction_content {
-    max-width: 1200px;
-    width: 100%;
-    padding-top: 70px;
+.chapter {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-self: stretch;
+    align-items: flex-start;
+}
+
+.headtext_chapter {
+    color: #000;
+    font-family: 'Francois One';
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+}
+
+.sup {
+    text-transform: capitalize;
+    color: #000;
+    font-family: 'Farro';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    position: relative;
+    top: -25px
+}
+
+.chapter_sub_text {
+    color: #000;
+    font-family: 'PT Sans';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
 }

@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fonts</title>
+    <link href='https://fonts.googleapis.com/css?family=Francois One' rel='stylesheet'>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <main class="main_screen">
-        <header class="header_wrapper">
-            <div class="container">
-                <span class="lang_text">eng</span>
-                <nav>
-                    <a href="#">
-                        documentation
-                    </a>
-                    <a href="#">
-                        who`s using
-                    </a>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <nav class="main_nav">
+                    <span class="lang_site">eng</span>
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="#">documentation</a>
+                        </li>
+                        <span class="slash">/</span>
+                        <li class="nav_item">
+                            <a href="#">who`s using</a>
+                        </li>
+                    </ul>
                 </nav>
-                <img src="./img/company-logo-black.svg" alt="author_logo">
+                <div class="main_logo_svg">
+                    <img src="./img/company-logo-black.svg" alt="">
+                </div>
             </div>
-        </header>
-        <section class="introduction_content">
-            <h2>
-                introduction
-            </h2>
-        </section>
+        </div>
+    </header>
+    <main>
+        <div class="main_content">
+            <div class="chapter">
+                <h2 class="headtext_chapter">introduction
+                    <span class="sup">Chapter 1</span>
+                </h2>
+                <p class="chapter_sub_text">
+                    Welcome to the very start of your React Native journey! If you're looking for environment setup instructions, they've moved to their own section. Continue reading for an introduction to the documentation, Native Components, React, and more!
+                </p>
+            </div>
+        </div>
     </main>
 </body>
+
 </html>
