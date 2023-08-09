@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Farro';
+    src: url(../fonts/Farro-Light.ttf);
+}
+
+@font-face {
+    font-family: 'FrancoisOne';
+    src: url(../fonts/FrancoisOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'PTSans';
+    src: url(../fonts/PTSans-Regular.ttf);
+    src: url(../fonts/PTSans-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'Staatliches';
+    src: url(../fonts/Staatliches-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Tourney';
+    src: url(../fonts/Tourney_Condensed-SemiBold.ttf);
+}
+
+body {
+    max-width: 1440px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 13px;
+    position: relative;
+}
+
+.lang_text {
+    font-family: 'Tourney';
+    font-size: 22px;
+    line-height: 18px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    top: 16px;
+    bottom: 16px;
+}
+
+nav {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: 'Staatliches';
+    left: 100px;
+    position: absolute;
+}
+
+nav a:not(:last-child)::after {
+    content: "/";
+    margin: 0 10px;
+}
+
+.container img {
+    height: 54px;
+    max-width: 238px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.introduction_content {
+    max-width: 1200px;
+    width: 100%;
+    padding-top: 70px;
+}

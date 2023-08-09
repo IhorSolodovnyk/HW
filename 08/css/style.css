@@ -92,6 +92,19 @@ img {
     transition: all 1s ease;
 } 
 
+.grid_1 div:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.grid_1 div:hover .icon_heart {
+    opacity: 1;
+}
+
+.grid_1 div:hover .icon_download {
+    opacity: 1;
+}
 
 .head_text2 {
     margin: 0 auto;
@@ -137,6 +150,32 @@ img {
     opacity: 0;
     transition: all 1s ease;
 } 
+
+.grid_2 div:hover::before {
+    display: block;
+    border-radius: 20px;
+    background: var(--hover-overlay,
+            linear-gradient(360deg,
+                #241f24 1.04%,
+                rgba(91, 91, 91, 0.26) 6.99%,
+                rgba(187, 186, 192, 0) 12.29%));
+}
+
+.grid_2 div:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.grid_2 div:hover .icon_heart {
+    opacity: 1;
+}
+
+.grid_2 div:hover .icon_download {
+    opacity: 1;
+}
+
+
 
 .grid_2 img {
     border-radius: 20px;
@@ -194,6 +233,24 @@ img {
     gap: 30px;
 }
 
+.people_grid_img div:hover::before {
+    display: block;
+    border-radius: 20px;
+    background: var(--hover-overlay,
+            linear-gradient(360deg,
+                #241f24 1.04%,
+                rgba(91, 91, 91, 0.26) 6.99%,
+                rgba(187, 186, 192, 0) 12.29%));
+}
+
+.people_grid_img div:hover .icon_heart {
+    opacity: 1;
+}
+
+.people_grid_img div:hover .icon_download {
+    opacity: 1;
+}
+
 .people_grid_img img {
     border-radius: 20px;
 }
@@ -220,6 +277,12 @@ img {
     left: 0;
     border-radius: 20px;
     background: var(--blure, linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34.11%, rgba(187, 186, 192, 0.26) 62.50%));
+}
+
+.people_grid_img div:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
 }
 
 .people_grid_img div:hover:before {
@@ -250,33 +313,43 @@ img {
 }
 
 .icon_heart {
-    display: block;
+    display: flex;
     position: absolute;
-    font-size: 20px;
+    padding: 10px;
     top: 20px;
     left: 20px;
-    padding: 20px 20px;
+    width: 40px;
+    height: 40px;
     border-radius: 8px;
     background-color: #4F4F4F;
-    opacity: 0.5;
     cursor: pointer;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    font-size: 25px;
+    opacity: 0.5;
 }
 
 .icon_heart:hover {
     background-color: #fff;
-    opacity: 1;
+    opacity: 0.5;
 }
 
-
 .icon_download {
-    display: block;
+    display: flex;
     position: absolute;
-    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
     top: 20px;
     right: 20px;
-    padding: 20px 20px;
     background-color: #4F4F4F;
-    opacity: 0.5;
+    opacity: 0;
     border-radius: 8px;
     cursor: pointer;;
 }
@@ -285,3 +358,5 @@ img {
     background-color: #fff;
     opacity: 1;
 }
+
+
