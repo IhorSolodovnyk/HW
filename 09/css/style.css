@@ -22,12 +22,6 @@
     src: url(../fonts/Tourney_Condensed-SemiBold.ttf);
 }
 
-body {
-    max-width: 1440px;
-    width: 100%;
-    font-family: 'Francois One';
-}
-
 .main_content {
     display: flex;
     flex-direction: column;
@@ -38,6 +32,7 @@ body {
 
 .container {
     padding: 13px 120px;
+    margin: 0 auto;
 }
 
 .header-wrapper {
