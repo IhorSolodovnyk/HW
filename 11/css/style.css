@@ -1,0 +1,63 @@
+body {
+    background-color: #E4E4E4;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container_hero {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 570px;
+}
+
+.header_text {
+    padding-left: 20px ;
+    margin-bottom: 20px;
+}
+
+.hero {
+    background-color: #fff;
+}
+
+.header_wrapper {
+    max-width: 570px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.name_form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    align-self: center;
+    gap: 12px;
+}
+
+.eadress_form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-top: 20px;
+}
+
+input[type='text'] {
+    width: 245px;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+input[type='email'] {
+    width: 500px;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-size: 15px;
+}
