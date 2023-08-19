@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae9a231a8c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -104,11 +106,17 @@
                         <h2 class="main_headtext">Profile</h2>
                         <div class="form_content">
                             <div class="upload_file">
-                                <div class="file_item">
+                                <div class="user_image">
                                     <img src="./img/📷 Image.svg" alt="">
-                                    <label for="file"></label>
+                                </div>
+                                <div class="file_item">
                                     <input type="file" name="file_upload" id="file">
+                                    <label for="file" class="file_lbl"><i class="fa-solid fa-camera"></i></label>
                                     <span class="subtext_file">Up to 1mb(300x300 px)</span>
+                                </div>
+                                <div class="delete_file">
+                                    <button type="button" class="delete_button">
+                                        <i class="fa-solid fa-trash"></i>
                                 </div>
                             </div>
                             <div class="content_section">

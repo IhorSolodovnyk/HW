@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 30px;
 }
 
 .label_input {
@@ -28,6 +28,10 @@ input[type='email']:focus,
 .select_content:focus {
     border-color: #007BFF;
     outline: none;
+}
+
+input[type='file'] {
+    display: none;
 }
 
 input::placeholder {
@@ -64,7 +68,60 @@ input::placeholder {
 
 .file_item {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.file_lbl {
+    display: flex;
+    width: 138px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #cdcccc;
+    border-radius: 6px;
+    color: #969696;
+    cursor: pointer;
+    position: relative;
+}
+
+.file_lbl:hover {
+    border-color:  #007BFF;
+}
+
+.fa-camera {
+    position: absolute;
+    right: 10px;
+    font-size: 16px;
+}
+
+.subtext_file {
+    color: #969696;
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    text-align: center;
+}
+
+.fa-trash {
+    font-size: 13px;
+}
+
+.delete_button {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid #cdcccc;
+    color: #969696;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.delete_button:hover {
+    border-color: #007BFF;
 }
 
 .form_wrapper {
@@ -85,7 +142,7 @@ input::placeholder {
 }
 
 .name_input,
-.form_items{
+.form_items {
     display: flex;
     width: 245px;
     height: 67px;
