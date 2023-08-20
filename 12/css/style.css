@@ -1,0 +1,120 @@
+body {
+    margin: 0 auto;
+}
+
+.hero {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.hero_content {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header_content {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.header_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.photo_card {
+    padding: 15px;
+    width: 430px;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #fc0 100px, transparent 100px 330px, #fc0 330px), linear-gradient(to right, #fc0 100px, transparent 100px 330px, #fc0 330px), linear-gradient(to top, #fc0 100px, transparent 100px 330px, #fc0 330px), linear-gradient(to top, #fc0 100px, transparent 100px 330px, #fc0 330px);
+    background-repeat: no-repeat;
+    background-size: 100% 1px, 100% 1px, 1px 100%, 1px 100%;
+    background-position: bottom, top, left, right;
+}
+
+.header_desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.header_sub {
+    color: var(--sub-text, #898F8F);
+    margin: 0;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.header_headtext {
+    color: var(--gold, #FC0);
+    font-family: 'Roboto';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 66px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.img_header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_header::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 210px;
+    background-color: #FC0;
+}
+
+.img_header::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 210px;
+    background-color: #FC0;
+}
+
+.photo_card img {
+    width: 400px;
+    border: 1px solid #FC0;
+}
+
+.hero_headtext {
+    color: #666;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.header_subtext {
+    color: #666;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: capitalize;
+}
