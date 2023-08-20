@@ -283,6 +283,30 @@ label:has(input[type="radio"]:checked) {
     cursor: pointer;
 }
 
+.input_select {
+    display: flex;
+    position: relative;
+}
+
+.fa-sort-up {
+    display: block;
+    position: absolute;
+    right: 6px;
+    top: 9px;
+    background-color: #FFF;
+    color: #969696;
+    cursor: pointer;
+}
+
+.fa-caret-down {
+    display: block;
+    position: absolute;
+    right: 6px;
+    bottom: 9px;
+    color: #969696;
+    cursor: pointer;
+}
+
 .custom_option {
     display: none;
 }
