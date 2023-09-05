@@ -121,3 +121,210 @@ body {
     letter-spacing: 0.8px;
     padding-top: 50px;
 }
+
+.article {
+    margin-bottom: 90px;
+}
+
+.article_item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.articles {
+    display: flex;
+    gap: 30px;
+}
+
+.article_content img {
+    margin-bottom: 25px;
+}
+
+.article_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.article_title {
+    color: #000;
+    font-family: 'Red Hat Display';
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 166%;
+    letter-spacing: 2.8px;
+    text-transform: capitalize;
+}
+
+.link_text {
+    color: #7B7B7B;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 166%;
+    letter-spacing: 1.6px;
+}
+
+.img_sub {
+    display: flex;
+    justify-content: space-between;
+    color: #7B7B7B;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 166%;
+    letter-spacing: 1.2px;
+    margin-bottom: 25px;
+}
+
+.img_description {
+    display: flex;
+    justify-content: space-between;
+    color: #7B7B7B;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 166%;
+    letter-spacing: 1.2px;
+}
+
+
+.article_heading {
+    color: #000;
+    font-family: 'Red Hat Display';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 166%;
+    letter-spacing: 2.2px;
+    margin-bottom: 20px;
+}
+
+.article_subheading {
+    color: #000;
+    font-family: 'Red Hat Display';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 166%;
+    letter-spacing: 2.2px;
+}
+
+.article_subtext {
+    color: #565656;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 166%;
+    letter-spacing: 0.8px;
+    max-width: 330px;
+    width: 100%;
+}
+
+.article_text {
+    color: #565656;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 166%;
+    letter-spacing: 0.8px;
+}
+
+.load_more_btn {
+    background-color: #565656;
+    padding: 10px 45px;
+    color: #FFF;
+    font-family: 'Lato';
+    font-size: 16px;
+    line-height: 166%;
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.load_more_btn:hover {
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+.info_section {
+    padding: 90px 0;
+}
+
+.info_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.info_headtext {
+    color: #000;
+    font-family: 'Red Hat Display';
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 166%;
+    letter-spacing: 2.3px;
+    max-width: 470px;
+    width: 100%;
+}
+
+.side_content_item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.side_content {
+    color: #565656;
+    font-family: 'Lato';
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.95px;
+    max-width: 470px;
+    width: 100%;
+}
+
+.contact {
+    background-color: #f4f4f4;
+}
+
+.contact_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.contact_title {
+    color: #000;
+    font-family: 'Red Hat Display';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 2.4px;
+    margin-bottom: 30px;
+}
+
+.contact_tel {
+    color: #000;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 166%;
+    letter-spacing: 1.6px;
+    margin-bottom: 15px;
+}
+
+.contact_email {
+    color: #000;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166%;
+    letter-spacing: 1.6px;
+}
