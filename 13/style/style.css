@@ -4,7 +4,6 @@ body {
 }
 
 .header_wrapper {
-    max-width: 1440px;
     width: 100%;
     z-index: 1;
     position: fixed;
@@ -14,7 +13,7 @@ body {
 .container,
 .hero_container {
     max-width: 1170px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     position: relative;
 }
@@ -327,4 +326,25 @@ body {
     font-weight: 400;
     line-height: 166%;
     letter-spacing: 1.6px;
+}
+
+
+@media screen and (max-width: 968px) {
+    .nav {
+        display: none;
+    }
+    .articles {
+       flex-direction: column;
+    }
+    .article_content {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+    }
+    .article_content_desc {
+
+    }
+    .reverse {
+        flex-direction: row-reverse;
+    }
 }
